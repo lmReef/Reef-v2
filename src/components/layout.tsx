@@ -1,4 +1,5 @@
 import Nav from './nav';
+import ReactFullpage from '@fullpage/react-fullpage';
 import styled from 'styled-components';
 
 const StyledLayout = styled.div`
@@ -7,6 +8,11 @@ const StyledLayout = styled.div`
   flex-direction: column;
 
   background-color: var(--navy);
+
+  #fp-nav ul li a span,
+  .fp-slidesNav ul li a span {
+    background: var(--yellow) !important;
+  }
 `;
 
 const Layout = ({
@@ -19,7 +25,17 @@ const Layout = ({
   return (
     <StyledLayout className={className}>
       <Nav />
-      <div id="content">{children}</div>
+      <ReactFullpage
+        licenseKey={'gplv3-license'}
+        anchors={['home', 'about', 'work', 'contact']}
+        navigation
+        scrollingSpeed={650}
+        dragAndMove={true}
+        touchSensitivity={15}
+        render={({ fullpageApi }) => {
+          return <ReactFullpage.Wrapper>{children}</ReactFullpage.Wrapper>;
+        }}
+      />
       {/* <Footer /> */}
     </StyledLayout>
   );

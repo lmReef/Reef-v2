@@ -6,7 +6,6 @@ const StyledLayout = styled(Layout)`
   text-align: center;
 
   h1 {
-    margin-top: 14rem;
     font-size: 6rem;
     color: var(--yellow);
   }
@@ -15,7 +14,18 @@ const StyledLayout = styled(Layout)`
 const Home: NextPage = () => {
   return (
     <StyledLayout>
-      <h1>Reef Matson</h1>
+      <div className="section">
+        <h1>Reef Matson</h1>
+      </div>
+      <div className="section">
+        <h2>About</h2>
+      </div>
+      <div className="section">
+        <h2>Work</h2>
+      </div>
+      <div className="section">
+        <h2>Contact</h2>
+      </div>
     </StyledLayout>
   );
 };

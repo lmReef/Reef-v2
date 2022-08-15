@@ -6,8 +6,9 @@ import styled from 'styled-components';
 const StyledNav = styled.div`
   width: 100%;
   height: 5rem;
+  z-index: 20;
 
-  position: sticky;
+  position: absolute;
   display: flex;
   background-color: rgba(0, 0, 0, 0.05);
 
@@ -59,7 +60,7 @@ const Nav = () => {
   return (
     <StyledNav>
       <div className="nav-start">
-        <Button className="nav-logo" text="R" link="/" />
+        <Button className="nav-logo" text="R" link="#home" />
       </div>
       <div className="nav-centered">
         <Button className="nav-item" text="About" link="#about" />
