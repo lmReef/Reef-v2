@@ -1,3 +1,4 @@
+import Footer from './footer';
 import Nav from './nav';
 import ReactFullpage from '@fullpage/react-fullpage';
 import styled from 'styled-components';
@@ -30,13 +31,14 @@ const Layout = ({
         anchors={['home', 'about', 'work', 'contact']}
         navigation
         scrollingSpeed={650}
+        easing="easeInOutCubic"
         dragAndMove={true}
         touchSensitivity={15}
+        keyboardScrolling={true}
         render={({ fullpageApi }) => {
           return <ReactFullpage.Wrapper>{children}</ReactFullpage.Wrapper>;
         }}
       />
-      {/* <Footer /> */}
     </StyledLayout>
   );
 };

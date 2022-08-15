@@ -1,3 +1,4 @@
+import Footer from '../components/footer';
 import Layout from '../components/layout';
 import type { NextPage } from 'next';
 import styled from 'styled-components';
@@ -26,6 +27,7 @@ const Home: NextPage = () => {
       <div className="section">
         <h2>Contact</h2>
       </div>
+      <Footer className="section" />
     </StyledLayout>
   );
 };
