@@ -1,4 +1,3 @@
-import Footer from './footer';
 import Nav from './nav';
 import ReactFullpage from '@fullpage/react-fullpage';
 import styled from 'styled-components';
@@ -12,7 +11,7 @@ const StyledLayout = styled.div`
 
   #fp-nav ul li a span,
   .fp-slidesNav ul li a span {
-    background: var(--yellow) !important;
+    background: var(--yellow);
   }
 `;
 
@@ -28,7 +27,7 @@ const Layout = ({
       <Nav />
       <ReactFullpage
         licenseKey={'gplv3-license'}
-        anchors={['home', 'about', 'work', 'contact']}
+        anchors={['home', 'about', 'work', 'contact', 'footer']}
         navigation
         scrollingSpeed={650}
         easing="easeInOutCubic"
