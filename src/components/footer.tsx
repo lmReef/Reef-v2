@@ -10,7 +10,7 @@ const StyledFooter = styled.footer`
 const Footer = ({ className }: { className?: string }) => {
   return (
     <StyledFooter className={className}>
-      <h2>Footer</h2>
+      <h2 className="code">{`// TODO: make a footer section`}</h2>
     </StyledFooter>
   );
 };

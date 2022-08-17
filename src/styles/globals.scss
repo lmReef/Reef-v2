@@ -15,3 +15,41 @@ a {
   color: var(--yellow);
   text-decoration: none;
 }
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+h1 {
+  font-size: 6rem;
+  color: var(--yellow);
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 1.3rem;
+  color: var(--yellow);
+}
+
+.section-content {
+  margin: 2rem;
+
+  p {
+    color: var(--slate);
+    font-size: 1.2rem;
+    margin: 0.5rem;
+  }
+
+  svg {
+    font-size: 1.3rem;
+  }
+}
+
+.code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  color: var(--slate);
+}

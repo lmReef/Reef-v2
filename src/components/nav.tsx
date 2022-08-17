@@ -57,6 +57,7 @@ const StyledNav = styled.div`
 `;
 
 const Nav = () => {
+  // TODO: implement nav state
   return (
     <StyledNav>
       <div className="nav-start">

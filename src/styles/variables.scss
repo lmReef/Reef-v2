@@ -1,3 +1,7 @@
+// scss variables
+$border-radius: 6px;
+
+// css variables
 :root {
   // colours
   --dark-navy: #020c1b;
@@ -11,6 +15,8 @@
   --lightest-slate: #ccd6f6;
   --white: #e6f1ff;
   --yellow: #fbd870;
-  --pink: #f57dff;
-  --blue: #57cbff;
+  --yellow-tint: rgba(251, 216, 112, 0.15);
+
+  // other
+  --border-radius: 6px;
 }
