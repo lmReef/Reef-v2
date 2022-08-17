@@ -10,6 +10,7 @@ const StyledNav = styled.div`
 
   position: absolute;
   display: flex;
+  /* TODO: add blur */
   background-color: rgba(0, 0, 0, 0.05);
 
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
