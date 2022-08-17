@@ -8,11 +8,6 @@ const StyledLayout = styled.div`
   flex-direction: column;
 
   background-color: var(--navy);
-
-  #fp-nav ul li a span,
-  .fp-slidesNav ul li a span {
-    background: var(--yellow);
-  }
 `;
 
 const Layout = ({

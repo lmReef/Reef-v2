@@ -1,0 +1,11 @@
+body {
+  #fp-nav ul li a,
+  .fp-slidesNav ul li a {
+    span {
+      background: rgba(251, 216, 112, 0.25);
+    }
+    &.active span {
+      background: rgba(251, 216, 112, 0.35);
+    }
+  }
+}
