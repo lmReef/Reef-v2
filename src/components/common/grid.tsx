@@ -11,7 +11,7 @@ const StyledGrid = styled.div`
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
-  margin: 0 4rem;
+  margin: 0 4rem 1rem 0;
 `;
 
 const StyledTile = styled.div`
