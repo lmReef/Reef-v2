@@ -13,12 +13,20 @@ const StyledSection = styled.div`
     justify-content: center;
     gap: 1rem;
   }
+
+  h4.im-begging-you {
+    cursor: default;
+    font-size: 1rem;
+    color: var(--light-navy);
+    letter-spacing: 2px;
+  }
 `;
 
 const Contact = () => {
   return (
     <StyledSection className="section contact">
       <h2>Get in touch with me</h2>
+      <h3>You know you want to</h3>
       <div className="section-content">
         <p>Here&apos;s a few ways to get hold of me</p>
         <br />
@@ -41,6 +49,9 @@ const Contact = () => {
             }}
           />
         </div>
+        <br />
+        <br />
+        <h4 className="im-begging-you">Please</h4>
       </div>
     </StyledSection>
   );
