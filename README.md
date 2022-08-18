@@ -11,3 +11,5 @@ This is the second attempt at creating myself a portfolio site.
 - NextJS
 - Styled Components
 - SCSS
+- FullPageJS
+- AWS Amplify
