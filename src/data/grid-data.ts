@@ -44,7 +44,7 @@ const GridData: GridInput[] = [
     title: 'Wonder Horse',
     link: 'https://www.wonderhorse.co.nz/',
     image: '/images/wh.svg',
-    desc: 'Flippin patties. Burnin kitchenware.',
+    desc: "Flippin' patties. Burnin' kitchenware.",
     tags: ['Cooking', 'Cleaning', 'Sinking Piss'],
   },
 ];
