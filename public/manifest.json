@@ -1,0 +1,19 @@
+{
+  "short_name": "Reef",
+  "name": "Reef Matson",
+  "icons": [
+    {
+      "src": "/images/logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0a192f",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "scope": "/",
+  "theme_color": "#0a192f",
+  "description": "Reef Matson's portfolio site.",
+  "screenshots": []
+}
