@@ -16,7 +16,7 @@ const About = () => {
           stuff
         </p>
         <p>
-          I'm currently working on awesome user facing products over at{' '}
+          I&apos;m currently working on awesome user facing products over at{' '}
           <a href="https://www.tvnz.co.nz/" target="_blank" rel="noreferrer">
             TVNZ
           </a>

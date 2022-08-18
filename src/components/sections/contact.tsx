@@ -20,7 +20,7 @@ const Contact = () => {
     <StyledSection className="section contact">
       <h2>Get in touch with me</h2>
       <div className="section-content">
-        <p>Here's a few ways to get hold of me</p>
+        <p>Here&apos;s a few ways to get hold of me</p>
         <br />
         <div className="center">
           <Button
