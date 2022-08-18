@@ -1,13 +1,8 @@
 import Grid from '../common/grid';
 import GridData from '../../data/grid-data';
-import breakpoints from '../../styles/breakpoints';
 import styled from 'styled-components';
 
-const StyledSection = styled.div`
-  h2 {
-    margin-top: 7rem;
-  }
-`;
+const StyledSection = styled.div``;
 
 const Work = () => {
   return (

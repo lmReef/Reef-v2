@@ -29,6 +29,7 @@ const Layout = ({
         dragAndMove={true}
         touchSensitivity={15}
         keyboardScrolling={true}
+        paddingTop="5rem"
         render={({ fullpageApi }) => {
           return <ReactFullpage.Wrapper>{children}</ReactFullpage.Wrapper>;
         }}
