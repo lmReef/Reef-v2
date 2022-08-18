@@ -6,10 +6,6 @@ import styled from 'styled-components';
 const StyledSection = styled.div`
   h2 {
     margin-top: 7rem;
-
-    @media only screen and (max-width: ${breakpoints.mobile}) {
-      margin-top: 0;
-    }
   }
 `;
 
