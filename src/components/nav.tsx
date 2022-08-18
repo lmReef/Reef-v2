@@ -9,7 +9,7 @@ const StyledNav = styled.div`
   height: 5rem;
   z-index: 20;
 
-  position: absolute;
+  position: fixed;
   display: flex;
   backdrop-filter: blur(3px);
   background-color: rgba(0, 0, 0, 0.05);
