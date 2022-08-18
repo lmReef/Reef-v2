@@ -1,6 +1,7 @@
 import { AiOutlineLinkedin } from 'react-icons/ai';
 import { BsGithub } from 'react-icons/bs';
 import Button from './common/button';
+import breakpoints from '../styles/breakpoints';
 import styled from 'styled-components';
 
 const StyledNav = styled.div`
@@ -10,7 +11,7 @@ const StyledNav = styled.div`
 
   position: absolute;
   display: flex;
-  /* TODO: add blur */
+  backdrop-filter: blur(3px);
   background-color: rgba(0, 0, 0, 0.05);
 
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
@@ -54,6 +55,12 @@ const StyledNav = styled.div`
     gap: 0.5rem;
     align-self: center;
     justify-content: center;
+  }
+
+  @media only screen and (max-width: ${breakpoints.mobile}) {
+    .nav-centered {
+      display: none;
+    }
   }
 `;
 

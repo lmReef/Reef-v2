@@ -3,8 +3,8 @@ const GridData: GridInput[] = [
     title: 'TVNZ',
     link: 'https://www.tvnz.co.nz/',
     image: '/images/tvnz.png',
-    desc: 'I currently work here as a software engineer and have been apart of quite a few projects. Most recently was a rebrand.',
-    tags: ['EmberJs', 'SCSS', 'AWS', 'Contentful'],
+    desc: 'I currently work here as a software engineer and have been apart of quite a few projects.',
+    tags: ['EmberJs', 'SCSS', 'AWS', 'Contentful', 'Jest', 'VideoJs'],
   },
   {
     title: 'Drink Tailor',
@@ -15,20 +15,6 @@ const GridData: GridInput[] = [
       { text: 'github', url: 'https://github.com/lmReef/drink-tailor' },
     ],
     tags: ['ReactJs', 'Redux', 'NextJs', 'Typescript', 'AWS'],
-  },
-  {
-    title: '1News',
-    link: 'https://www.1news.co.nz/',
-    image: '/images/1news.png',
-    desc: 'I worked to rewrite the 1News website in React.',
-    tags: ['ReactJs', 'SCSS', 'AWS', 'ARC'],
-  },
-  {
-    title: 'Wonder Horse',
-    link: 'https://www.wonderhorse.co.nz/',
-    image: '/images/wh.svg',
-    desc: 'Flippin patties. Burnin kitchenware.',
-    tags: ['Cooking', 'Cleaning', '?', 'Drinking'],
   },
   {
     title: 'This Site',
@@ -46,6 +32,20 @@ const GridData: GridInput[] = [
       'AWS',
       'FullPageJs',
     ],
+  },
+  {
+    title: '1News',
+    link: 'https://www.1news.co.nz/',
+    image: '/images/1news.png',
+    desc: 'I worked to rewrite the 1News website in React.',
+    tags: ['ReactJs', 'SCSS', 'AWS', 'ARC', 'Jest', 'Enzyme', 'VideoJs'],
+  },
+  {
+    title: 'Wonder Horse',
+    link: 'https://www.wonderhorse.co.nz/',
+    image: '/images/wh.svg',
+    desc: 'Flippin patties. Burnin kitchenware.',
+    tags: ['Cooking', 'Cleaning', 'Sinking Piss'],
   },
 ];
 

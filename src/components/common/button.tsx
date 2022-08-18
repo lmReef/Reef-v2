@@ -36,15 +36,15 @@ const Button = ({
 }) => {
   return onClick ? (
     <a className={className} onClick={onClick}>
-      <StyledButton>{text}</StyledButton>
+      <StyledButton className="button">{text}</StyledButton>
     </a>
   ) : newTab ? (
     <a href={link} target="_blank" rel="noreferrer" className={className}>
-      <StyledButton>{text}</StyledButton>
+      <StyledButton className="button">{text}</StyledButton>
     </a>
   ) : (
     <a href={link} className={className}>
-      <StyledButton>{text}</StyledButton>
+      <StyledButton className="button">{text}</StyledButton>
     </a>
   );
 };

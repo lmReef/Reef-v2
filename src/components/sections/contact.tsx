@@ -9,6 +9,7 @@ import styled from 'styled-components';
 const StyledSection = styled.div`
   .center {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
   }

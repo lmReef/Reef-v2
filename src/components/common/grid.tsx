@@ -11,11 +11,12 @@ const StyledGrid = styled.div`
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
-  margin: 0 12rem 1rem 12rem;
+  margin: 1rem auto;
+  max-width: 70rem; // only large enough for 3 tiles wide
 `;
 
 const StyledTile = styled.div`
-  width: 23rem;
+  width: 20rem;
   padding: 1rem;
 
   display: flex;
@@ -39,7 +40,8 @@ const StyledTile = styled.div`
     width: 100%;
     display: flex;
 
-    .title {
+    .title,
+    .title h3 {
       display: flex;
       align-items: center;
       gap: 0.5rem;
@@ -56,6 +58,10 @@ const StyledTile = styled.div`
           color: var(--dark-slate);
         }
       }
+
+      h3 {
+        margin: 0;
+      }
     }
     .links {
       display: flex;
@@ -65,25 +71,29 @@ const StyledTile = styled.div`
     }
   }
   .desc {
+    height: 100%;
     font-size: 1rem;
     max-width: 20rem;
     text-align: start;
   }
   .tags {
     width: 100%;
-    height: 100%;
     margin-top: 0.2rem;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
+
+    .button {
+      padding: 0.3rem 0.5rem;
+    }
   }
 
   .image-container {
     display: flex;
     width: 100%;
-    min-height: 10rem;
+    min-height: 8rem;
 
     span,
     image {
@@ -132,7 +142,7 @@ const Grid = ({ gridData }: { gridData: GridInput[] }) => {
                 rel="noreferrer"
                 className="title"
               >
-                {tile.title}
+                <h3>{tile.title}</h3>
                 <BiLinkExternal />
               </a>
               <span className="links">

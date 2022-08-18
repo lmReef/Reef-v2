@@ -16,11 +16,16 @@ a {
   text-decoration: none;
 }
 
+// headers
 h1,
 h2,
 h3,
 h4 {
   margin: 0;
+
+  @media only screen and (max-width: $mobile) {
+    margin: 0 1rem;
+  }
 }
 h1 {
   font-size: 6rem;
@@ -34,6 +39,7 @@ h3 {
   color: var(--yellow);
 }
 
+// classes
 .section-content {
   margin: 2rem;
 
