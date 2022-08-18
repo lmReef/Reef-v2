@@ -12,7 +12,7 @@ const About = () => {
       <h2>About Me</h2>
       <div className="section-content">
         <p>
-          I am a full-stack software engineer with a passion for building cool
+          I am a Full-Stack Software Engineer with a passion for building cool
           stuff
         </p>
         <p>
