@@ -1,5 +1,3 @@
-/* eslint-disable react/jsx-key */
-
 import { AiOutlineLinkedin } from 'react-icons/ai';
 import Button from '../common/button';
 import { GiSmartphone } from 'react-icons/gi';
@@ -32,17 +30,17 @@ const Contact = () => {
         <br />
         <div className="center">
           <Button
-            text={[<MdEmail />, 'ReefMatson@gmail.com']}
+            text={[<MdEmail key={0} />, 'ReefMatson@gmail.com']}
             link="mailto: ReefMatson@gmail.com"
             newTab
           />
           <Button
-            text={[<AiOutlineLinkedin />, 'LinkedIn']}
+            text={[<AiOutlineLinkedin key={0} />, 'LinkedIn']}
             link="https://www.linkedin.com/in/reefmatson/"
             newTab
           />
           <Button
-            text={[<GiSmartphone />, '+64 20 4078 3637']}
+            text={[<GiSmartphone key={0} />, '+64 20 4078 3637']}
             onClick={() => {
               navigator.clipboard.writeText('+642040783637');
               alert('+642040783637 Copied to clipboard.');
