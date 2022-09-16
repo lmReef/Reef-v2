@@ -1,6 +1,8 @@
 import { AiOutlineLinkedin } from 'react-icons/ai';
 import { BsGithub } from 'react-icons/bs';
 import Button from './common/button';
+import Image from 'next/image';
+import Link from 'next/link';
 import breakpoints from '../styles/breakpoints';
 import styled from 'styled-components';
 
@@ -25,7 +27,17 @@ const StyledNav = styled.div`
   }
 
   .nav-logo {
-    font-size: 2rem;
+    height: 4rem;
+    width: 4rem;
+
+    display: flex;
+    justify-content: center;
+
+    .button {
+      padding: 1rem;
+    }
+
+    font-size: 1rem;
     font-weight: bold;
   }
 
@@ -69,7 +81,30 @@ const Nav = () => {
   return (
     <StyledNav>
       <div className="nav-start">
-        <Button className="nav-logo" text="R" link="#home" />
+        <div className="nav-logo">
+          {/* <Link href="#home"> */}
+          <Button
+            className="nav-logo"
+            text={
+              <Image
+                src="/images/logo-no-circle.svg"
+                width="100%"
+                height="100%"
+                alt="logo"
+              />
+            }
+            link="#home"
+          />
+          {/* <a href="#home">
+            <Image
+              src="/images/logo-no-circle.svg"
+              width="100%"
+              height="100%"
+              alt="logo"
+            />
+          </a> */}
+          {/* </Link> */}
+        </div>
       </div>
       <div className="nav-centered">
         <Button className="nav-item" text="About" link="#about" />
