@@ -1,6 +1,6 @@
 interface GridInput {
   title: string;
-  link: string;
+  link: string | null;
   image: string;
   desc: string;
   'additional-links'?: [

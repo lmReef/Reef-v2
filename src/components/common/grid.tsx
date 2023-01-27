@@ -136,15 +136,19 @@ const Grid = ({ gridData }: { gridData: GridInput[] }) => {
               />
             </div>
             <span className="tile-header">
-              <a
-                href={tile.link}
-                target="_blank"
-                rel="noreferrer"
-                className="title"
-              >
-                <h3>{tile.title}</h3>
-                <BiLinkExternal />
-              </a>
+              {tile.link ? (
+                <a
+                  href={tile.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="title"
+                >
+                  <h3>{tile.title}</h3>
+                  <BiLinkExternal />
+                </a>
+              ) : (
+                <h3 className="title">{tile.title}</h3>
+              )}
               <span className="links">
                 {addLinks(tile['additional-links']) as ReactElement}
               </span>
