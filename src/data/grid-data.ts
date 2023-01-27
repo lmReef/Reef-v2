@@ -10,7 +10,7 @@ const GridData: GridInput[] = [
     title: 'Drink Tailor',
     link: 'https://drinktailor.net/',
     image: '/images/drink-tailor.png',
-    desc: 'A cocktail recipe site I made for fun.',
+    desc: 'A cocktail recipe site I made for fun. Website is currently offline.',
     'additional-links': [
       { text: 'github', url: 'https://github.com/lmReef/drink-tailor' },
     ],
@@ -46,6 +46,13 @@ const GridData: GridInput[] = [
     image: '/images/wh.svg',
     desc: "Flippin' patties. Burnin' kitchenware.",
     tags: ['Cooking', 'Cleaning', 'Sinking Piss'],
+  },
+  {
+    title: 'Tower Defence Game',
+    link: null,
+    image: '/images/td-game.png',
+    desc: 'A pixel art roguelite tower defence game I am currently working on.',
+    tags: ['Godot 4.0', 'GDScript', 'Game Dev', 'WIP'],
   },
 ];
 
