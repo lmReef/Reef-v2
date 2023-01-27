@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react';
+
 import { AiOutlineLinkedin } from 'react-icons/ai';
 import { BsGithub } from 'react-icons/bs';
 import Button from './common/button';
@@ -74,6 +76,12 @@ const StyledNav = styled.div`
       display: none;
     }
   }
+
+  @media only screen and (max-width: 370px) {
+    .resume-button {
+      display: none;
+    }
+  }
 `;
 
 const Nav = () => {
@@ -112,6 +120,12 @@ const Nav = () => {
         <Button className="nav-item" text="Contact" link="#contact" />
       </div>
       <div className="nav-end">
+        <Button
+          className="nav-item resume-button"
+          text="Resume"
+          link="/Reef_Matson_Resume.pdf"
+          newTab
+        />
         <Button
           className="nav-item nav-icon"
           text={<BsGithub />}
