@@ -1,8 +1,7 @@
 import { BiLinkExternal } from 'react-icons/bi';
-import { BsGithub } from 'react-icons/bs';
 import Button from './button';
+import { GridInput } from '../../../globals';
 import Image from 'next/image';
-import { ReactElement } from 'react';
 import styled from 'styled-components';
 
 const StyledGrid = styled.div`
@@ -109,11 +108,18 @@ const StyledTile = styled.div`
 `;
 
 const Grid = ({ gridData }: { gridData: GridInput[] }) => {
-  const addLinks = (links: { text: string; url: string }[] | undefined) => {
+  const addLinks = (
+    links: { text?: string; icon?: JSX.Element; url: string }[] | undefined,
+  ) => {
     if (links) {
       return links.map((link, index) => {
         return (
-          <Button key={index} text={<BsGithub />} link={link.url} newTab />
+          <Button
+            key={index}
+            text={link.icon || link.text || ''}
+            link={link.url}
+            newTab
+          />
         );
       });
     }
@@ -150,7 +156,7 @@ const Grid = ({ gridData }: { gridData: GridInput[] }) => {
                 <h3 className="title">{tile.title}</h3>
               )}
               <span className="links">
-                {addLinks(tile['additional-links']) as ReactElement}
+                {addLinks(tile['additional-links']) as JSX.Element}
               </span>
             </span>
             <p className="desc">{tile.desc}</p>
