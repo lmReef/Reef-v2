@@ -1,3 +1,7 @@
+import { BsGithub, BsTwitter } from 'react-icons/bs';
+
+import { GridInput } from '../../globals';
+
 const GridData: GridInput[] = [
   {
     title: 'TVNZ',
@@ -12,7 +16,7 @@ const GridData: GridInput[] = [
     image: '/images/drink-tailor.png',
     desc: 'A cocktail recipe site I made for fun. Website is currently offline.',
     'additional-links': [
-      { text: 'github', url: 'https://github.com/lmReef/drink-tailor' },
+      { icon: <BsGithub />, url: 'https://github.com/lmReef/drink-tailor' },
     ],
     tags: ['ReactJs', 'Redux', 'NextJs', 'Typescript', 'AWS'],
   },
@@ -22,7 +26,7 @@ const GridData: GridInput[] = [
     image: '/images/rp.png',
     desc: 'My personal portfolio site.',
     'additional-links': [
-      { text: 'github', url: 'https://github.com/lmReef/Reef-v2' },
+      { icon: <BsGithub />, url: 'https://github.com/lmReef/Reef-v2' },
     ],
     tags: [
       'ReactJs',
@@ -48,9 +52,12 @@ const GridData: GridInput[] = [
     tags: ['Cooking', 'Cleaning', 'Sinking Piss'],
   },
   {
-    title: 'Tower Defence Game',
-    link: null,
+    title: 'TD Game',
+    link: 'https://twitter.com/ReefMakeGames',
     image: '/images/td-game.png',
+    'additional-links': [
+      { icon: <BsTwitter />, url: 'https://twitter.com/ReefMakeGames' },
+    ],
     desc: 'A pixel art roguelite tower defence game I am currently working on.',
     tags: ['Godot 4.0', 'GDScript', 'Game Dev', 'WIP'],
   },
