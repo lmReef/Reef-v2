@@ -1,4 +1,5 @@
 import About from '../components/sections/about';
+import Background1 from '../components/three/bg-1';
 import Contact from '../components/sections/contact';
 import Footer from '../components/footer';
 import Image from 'next/image';
@@ -18,12 +19,20 @@ const StyledLayout = styled(Layout)`
       max-width: 75%;
     }
   }
+
+  .home {
+    object,
+    h1 {
+      z-index: 10;
+    }
+  }
 `;
 
 const Home: NextPage = () => {
   return (
     <StyledLayout>
       <div className="section home">
+        <Background1 />
         <object
           data="/images/splash.svg"
           type="image/svg+xml"
