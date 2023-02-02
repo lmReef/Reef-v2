@@ -5,11 +5,12 @@ import styled from 'styled-components';
 
 const StyledBG = styled.div`
   position: absolute;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   top: 0;
   left: 0;
   z-index: 5;
+  overflow: hidden;
 `;
 
 function ShaderPlane(props: ThreeElements['mesh']) {
