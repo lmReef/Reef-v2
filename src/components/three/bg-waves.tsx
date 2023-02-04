@@ -10,7 +10,7 @@ const StyledBG = styled.div`
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 0;
   overflow: hidden;
 `;
 

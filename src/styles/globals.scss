@@ -21,6 +21,7 @@ h1,
 h2,
 h3,
 h4 {
+  position: relative !important;
   margin: 0;
   z-index: 10;
 
@@ -44,6 +45,7 @@ h3 {
 .section-content {
   margin: 2rem;
   z-index: 10;
+  position: relative !important;
 
   p {
     color: var(--slate);
