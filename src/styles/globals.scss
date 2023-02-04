@@ -22,6 +22,7 @@ h2,
 h3,
 h4 {
   margin: 0;
+  z-index: 10;
 
   @media only screen and (max-width: $mobile) {
     margin: 0 1rem;
@@ -42,6 +43,7 @@ h3 {
 // classes
 .section-content {
   margin: 2rem;
+  z-index: 10;
 
   p {
     color: var(--slate);

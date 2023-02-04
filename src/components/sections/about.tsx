@@ -1,3 +1,4 @@
+import BgWaves from '../three/bg-waves';
 import styled from 'styled-components';
 
 const StyledSection = styled.div`
@@ -9,6 +10,7 @@ const StyledSection = styled.div`
 const About = () => {
   return (
     <StyledSection className="section about">
+      <BgWaves />
       <h2>About Me</h2>
       <div className="section-content">
         <p>I am a Software Engineer with a passion for building cool stuff</p>
@@ -19,7 +21,6 @@ const About = () => {
           </a>
         </p>
         <br />
-        <p className="code">{`// TODO: add something cool here`}</p>
       </div>
     </StyledSection>
   );
