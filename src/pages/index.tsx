@@ -1,5 +1,5 @@
 import About from '../components/sections/about';
-import Background1 from '../components/three/bg-1';
+import BgPattern from '../components/three/bg-pattern';
 import Contact from '../components/sections/contact';
 import Footer from '../components/footer';
 import Image from 'next/image';
@@ -32,7 +32,7 @@ const Home: NextPage = () => {
   return (
     <StyledLayout>
       <div className="section home">
-        <Background1 />
+        <BgPattern />
         <object
           data="/images/splash.svg"
           type="image/svg+xml"

@@ -1,4 +1,5 @@
 import { AiOutlineLinkedin } from 'react-icons/ai';
+import BgSpiralBottom from '../three/bg-spiral-bottom';
 import Button from '../common/button';
 import { GiSmartphone } from 'react-icons/gi';
 import { MdEmail } from 'react-icons/md';
@@ -23,6 +24,7 @@ const StyledSection = styled.div`
 const Contact = () => {
   return (
     <StyledSection className="section contact">
+      <BgSpiralBottom />
       <h2>Get in touch with me</h2>
       <h3>You know you want to</h3>
       <div className="section-content">
