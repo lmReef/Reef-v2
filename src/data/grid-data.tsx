@@ -7,7 +7,7 @@ const GridData: GridInput[] = [
     title: 'TVNZ',
     link: 'https://www.tvnz.co.nz/',
     image: '/images/tvnz.png',
-    desc: 'I currently work here as a software engineer and have been apart of quite a few projects.',
+    desc: 'I worked here as a software engineer and was part of quite a few projects.',
     tags: ['EmberJs', 'SCSS', 'AWS', 'Contentful', 'Jest', 'VideoJs'],
   },
   {

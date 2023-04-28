@@ -14,12 +14,7 @@ const About = () => {
       <h2>About Me</h2>
       <div className="section-content">
         <p>I am a Software Engineer with a passion for building cool stuff</p>
-        <p>
-          I&apos;m currently working on awesome user facing products over at{' '}
-          <a href="https://www.tvnz.co.nz/" target="_blank" rel="noreferrer">
-            TVNZ
-          </a>
-        </p>
+        <p>I&apos;m currently working on my first indie game!</p>
         <br />
       </div>
     </StyledSection>
