@@ -21,7 +21,7 @@ const GridData: GridInput[] = [
         icon: <FaSteam />,
         url: 'https://store.steampowered.com/app/2433360/Warja/',
       },
-      { icon: <BsTwitter />, url: 'https://twitter.com/ReefMakeGames' },
+      { icon: <BsTwitter />, url: 'https://twitter.com/ReefMakeGame' },
     ],
     desc: 'A pixel art roguelite tower defence game I am currently working on.',
     tags: ['Godot 4.0', 'GDScript', 'Steam APIs', 'Game Dev', 'WIP'],
