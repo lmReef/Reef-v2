@@ -1,6 +1,8 @@
 import { BsGithub, BsTwitter } from 'react-icons/bs';
 
+import { FaSteam } from 'react-icons/fa';
 import { GridInput } from '../../globals';
+import { url } from 'inspector';
 
 const GridData: GridInput[] = [
   {
@@ -11,14 +13,18 @@ const GridData: GridInput[] = [
     tags: ['EmberJs', 'SCSS', 'AWS', 'Contentful', 'Jest', 'VideoJs'],
   },
   {
-    title: 'Drink Tailor',
-    link: 'https://drinktailor.net/',
-    image: '/images/drink-tailor.png',
-    desc: 'A cocktail recipe site I made for fun. Website is currently offline.',
+    title: 'Warja Game',
+    link: 'https://store.steampowered.com/app/2433360/Warja/',
+    image: '/images/warja.png',
     'additional-links': [
-      { icon: <BsGithub />, url: 'https://github.com/lmReef/drink-tailor' },
+      {
+        icon: <FaSteam />,
+        url: 'https://store.steampowered.com/app/2433360/Warja/',
+      },
+      { icon: <BsTwitter />, url: 'https://twitter.com/ReefMakeGames' },
     ],
-    tags: ['ReactJs', 'Redux', 'NextJs', 'Typescript', 'AWS'],
+    desc: 'A pixel art roguelite tower defence game I am currently working on.',
+    tags: ['Godot 4.0', 'GDScript', 'Steam APIs', 'Game Dev', 'WIP'],
   },
   {
     title: 'This Site',
@@ -51,15 +57,16 @@ const GridData: GridInput[] = [
     desc: "Flippin' patties. Burnin' kitchenware.",
     tags: ['Cooking', 'Cleaning', 'Sinking Piss'],
   },
+
   {
-    title: 'TD Game',
-    link: 'https://twitter.com/ReefMakeGames',
-    image: '/images/td-game.png',
+    title: 'Drink Tailor',
+    link: 'https://drinktailor.net/',
+    image: '/images/drink-tailor.png',
+    desc: 'A cocktail recipe site I made for fun. Website is currently offline.',
     'additional-links': [
-      { icon: <BsTwitter />, url: 'https://twitter.com/ReefMakeGames' },
+      { icon: <BsGithub />, url: 'https://github.com/lmReef/drink-tailor' },
     ],
-    desc: 'A pixel art roguelite tower defence game I am currently working on.',
-    tags: ['Godot 4.0', 'GDScript', 'Game Dev', 'WIP'],
+    tags: ['ReactJs', 'Redux', 'NextJs', 'Typescript', 'AWS'],
   },
 ];
 
