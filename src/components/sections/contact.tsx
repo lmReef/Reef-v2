@@ -41,13 +41,13 @@ const Contact = () => {
             link="https://www.linkedin.com/in/reefmatson/"
             newTab
           />
-          <Button
+          {/* <Button
             text={[<GiSmartphone key={0} />, '+64 20 4078 3637']}
             onClick={() => {
               navigator.clipboard.writeText('+642040783637');
               alert('+642040783637 Copied to clipboard.');
             }}
-          />
+          /> */}
         </div>
         <br />
         <br />
