@@ -116,11 +116,13 @@ const Nav = () => {
           className="nav-item nav-icon"
           text={<BsGithub />}
           link="https://github.com/lmReef"
+          newTab
         />
         <Button
           className="nav-item nav-icon"
           text={<AiOutlineLinkedin />}
           link="https://www.linkedin.com/in/reefmatson/"
+          newTab
         />
       </div>
     </StyledNav>
