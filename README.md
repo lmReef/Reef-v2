@@ -13,5 +13,6 @@ https://ReefMatson.com/
 - NextJS
 - Styled Components
 - SCSS
+- ThreeJS
 - FullPageJS
 - AWS Amplify
