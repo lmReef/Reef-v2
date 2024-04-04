@@ -90,6 +90,7 @@ const StyledTile = styled.div`
   }
 
   .image-container {
+    position: relative;
     display: flex;
     width: 100%;
     min-height: 8rem;
@@ -135,10 +136,9 @@ const Grid = ({ gridData }: { gridData: GridInput[] }) => {
               <Image
                 unoptimized
                 objectFit="cover"
+                layout='fill'
                 src={tile.image}
                 alt="Image"
-                width="100%"
-                height="100%"
               />
             </div>
             <span className="tile-header">

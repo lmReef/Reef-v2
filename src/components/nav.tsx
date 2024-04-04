@@ -1,10 +1,9 @@
-import { AiOutlineLinkedin } from 'react-icons/ai';
-import { BsGithub } from 'react-icons/bs';
-import Button from './common/button';
-import Image from 'next/image';
-import Link from 'next/link';
-import breakpoints from '../styles/breakpoints';
-import styled from 'styled-components';
+import { AiOutlineLinkedin } from "react-icons/ai";
+import { BsGithub } from "react-icons/bs";
+import Button from "./common/button";
+import Image from "next/image";
+import breakpoints from "../styles/breakpoints";
+import styled from "styled-components";
 
 const StyledNav = styled.div`
   width: 100%;
@@ -34,7 +33,13 @@ const StyledNav = styled.div`
     justify-content: center;
 
     .button {
-      padding: 1rem;
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      padding: 0.5rem;
     }
 
     font-size: 1rem;
@@ -81,30 +86,13 @@ const Nav = () => {
   return (
     <StyledNav>
       <div className="nav-start">
-        <div className="nav-logo">
-          {/* <Link href="#home"> */}
-          <Button
-            className="nav-logo"
-            text={
-              <Image
-                src="/images/logo-no-circle.svg"
-                width="100%"
-                height="100%"
-                alt="logo"
-              />
-            }
-            link="#home"
-          />
-          {/* <a href="#home">
-            <Image
-              src="/images/logo-no-circle.svg"
-              width="100%"
-              height="100%"
-              alt="logo"
-            />
-          </a> */}
-          {/* </Link> */}
-        </div>
+        <Button
+          className="nav-logo"
+          text={
+            <Image src="/images/logo-no-circle.svg" layout="fill" alt="logo" />
+          }
+          link="#home"
+        />
       </div>
       <div className="nav-centered">
         <Button className="nav-item" text="About" link="#about" />
