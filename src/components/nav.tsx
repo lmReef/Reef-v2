@@ -1,9 +1,9 @@
-import { AiOutlineLinkedin } from "react-icons/ai";
-import { BsGithub } from "react-icons/bs";
-import Button from "./common/button";
-import Image from "next/image";
-import breakpoints from "../styles/breakpoints";
-import styled from "styled-components";
+import { AiOutlineLinkedin } from 'react-icons/ai';
+import { BsGithub } from 'react-icons/bs';
+import Button from './common/button';
+import Image from 'next/image';
+import breakpoints from '../styles/breakpoints';
+import styled from 'styled-components';
 
 const StyledNav = styled.div`
   width: 100%;
@@ -100,6 +100,12 @@ const Nav = () => {
         <Button className="nav-item" text="Contact" link="#contact" />
       </div>
       <div className="nav-end">
+        <Button
+          className="nav-item"
+          text={'Resume/CV'}
+          link="https://drive.google.com/file/d/1Q1HiyRkM1TWx0Op5LOu-cyF-Vb3Me8oY/view?usp=sharing"
+          newTab
+        />
         <Button
           className="nav-item nav-icon"
           text={<BsGithub />}
