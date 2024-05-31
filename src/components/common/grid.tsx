@@ -136,7 +136,7 @@ const Grid = ({ gridData }: { gridData: GridInput[] }) => {
               <Image
                 unoptimized
                 objectFit="cover"
-                layout='fill'
+                layout="fill"
                 src={tile.image}
                 alt="Image"
               />

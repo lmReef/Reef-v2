@@ -22,6 +22,9 @@ const StyledSection = styled.div`
 `;
 
 const Contact = () => {
+  const number = '+447424073865';
+  const email = 'ReefMatson@gmail.com';
+
   return (
     <StyledSection className="section contact">
       <BgSpiralBottom />
@@ -32,8 +35,8 @@ const Contact = () => {
         <br />
         <div className="center">
           <Button
-            text={[<MdEmail key={0} />, 'ReefMatson@gmail.com']}
-            link="mailto: ReefMatson@gmail.com"
+            text={[<MdEmail key={0} />, email]}
+            link={`mailto: ${email}`}
             newTab
           />
           <Button
@@ -41,13 +44,13 @@ const Contact = () => {
             link="https://www.linkedin.com/in/reefmatson/"
             newTab
           />
-          {/* <Button
-            text={[<GiSmartphone key={0} />, '+64 20 4078 3637']}
+          <Button
+            text={[<GiSmartphone key={0} />, number]}
             onClick={() => {
-              navigator.clipboard.writeText('+642040783637');
-              alert('+642040783637 Copied to clipboard.');
+              navigator.clipboard.writeText(number);
+              alert(`${number} Copied to clipboard.`);
             }}
-          /> */}
+          />
         </div>
         <br />
         <br />
