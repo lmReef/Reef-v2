@@ -19,7 +19,7 @@ const GridData: GridInput[] = [
       { icon: <BsGithub />, url: 'https://github.com/lmReef/knowledge-site' },
     ],
     desc: 'A website for learning random info. Stumble upon new things.',
-    tags: ['NextJs', 'ReactJs', 'Typescript', 'AWS', 'Tailwind'],
+    tags: ['NextJs', 'ReactJs', 'Typescript', 'AWS', 'Tailwind', 'SCSS'],
   },
   {
     title: 'Warja Game',
