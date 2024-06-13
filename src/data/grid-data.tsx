@@ -2,7 +2,6 @@ import { BsGithub, BsTwitter } from 'react-icons/bs';
 
 import { FaSteam } from 'react-icons/fa';
 import { GridInput } from '../../globals';
-import { url } from 'inspector';
 
 const GridData: GridInput[] = [
   {
@@ -11,6 +10,16 @@ const GridData: GridInput[] = [
     image: '/images/tvnz.png',
     desc: 'I worked here as a software engineer and was part of quite a few projects.',
     tags: ['EmberJs', 'SCSS', 'AWS', 'Contentful', 'Jest', 'VideoJs'],
+  },
+  {
+    title: 'Knowledge Website',
+    link: 'https://main.d1zlnxw87p566t.amplifyapp.com',
+    image: '/images/knowledge-site.png',
+    'additional-links': [
+      { icon: <BsGithub />, url: 'https://github.com/lmReef/knowledge-site' },
+    ],
+    desc: 'A website for learning random info. Stumble upon new things.',
+    tags: ['NextJs', 'ReactJs', 'Typescript', 'AWS', 'Tailwind'],
   },
   {
     title: 'Warja Game',
@@ -50,13 +59,14 @@ const GridData: GridInput[] = [
     desc: 'I worked to rewrite the 1News website in React.',
     tags: ['ReactJs', 'SCSS', 'AWS', 'ARC', 'Jest', 'Enzyme', 'VideoJs'],
   },
-  {
-    title: 'Wonder Horse',
-    link: 'https://www.wonderhorse.co.nz/',
-    image: '/images/wh.svg',
-    desc: "Flippin' patties. Burnin' kitchenware.",
-    tags: ['Cooking', 'Cleaning', 'Sinking Piss'],
-  },
+  // TODO: add slider so can have more than 6 items here
+  // {
+  //   title: 'Wonder Horse',
+  //   link: 'https://www.wonderhorse.co.nz/',
+  //   image: '/images/wh.svg',
+  //   desc: "Flippin' patties. Burnin' kitchenware.",
+  //   tags: ['Cooking', 'Cleaning', 'Sinking Piss'],
+  // },
 
   {
     title: 'Drink Tailor',
