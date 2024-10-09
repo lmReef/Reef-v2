@@ -22,7 +22,7 @@ const StyledSection = styled.div`
 `;
 
 const Contact = () => {
-  const number = '+447424073865';
+  const number = '+64204411241';
   const email = 'ReefMatson@gmail.com';
 
   return (
