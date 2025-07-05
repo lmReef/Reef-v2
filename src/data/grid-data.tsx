@@ -12,13 +12,13 @@ const GridData: GridInput[] = [
     tags: ['EmberJs', 'SCSS', 'AWS', 'Contentful', 'Jest', 'VideoJs'],
   },
   {
-    title: 'Knowledge Website',
-    link: 'https://main.d1zlnxw87p566t.amplifyapp.com',
+    title: 'Wiki Site',
+    link: 'https://wiki.reefmatson.com',
     image: '/images/knowledge-site.png',
     'additional-links': [
       { icon: <BsGithub />, url: 'https://github.com/lmReef/knowledge-site' },
     ],
-    desc: 'A website for learning random info. Stumble upon new things.',
+    desc: 'A wikipedia clone for learning random info. Stumble upon new things.',
     tags: ['NextJs', 'ReactJs', 'Typescript', 'AWS', 'Tailwind', 'SCSS'],
   },
   {
