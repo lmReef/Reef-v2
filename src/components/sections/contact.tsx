@@ -1,7 +1,6 @@
 import { AiOutlineLinkedin } from 'react-icons/ai';
 import BgSpiralBottom from '../three/bg-spiral-bottom';
 import Button from '../common/button';
-import { GiSmartphone } from 'react-icons/gi';
 import { MdEmail } from 'react-icons/md';
 import styled from 'styled-components';
 
@@ -22,7 +21,6 @@ const StyledSection = styled.div`
 `;
 
 const Contact = () => {
-  const number = '+64204411241';
   const email = 'contact@ReefMatson.com';
 
   return (
@@ -42,13 +40,6 @@ const Contact = () => {
             text={[<AiOutlineLinkedin key={0} />, 'LinkedIn']}
             link="https://www.linkedin.com/in/reefmatson/"
             newTab
-          />
-          <Button
-            text={[<GiSmartphone key={0} />, number]}
-            onClick={() => {
-              navigator.clipboard.writeText(number);
-              alert(`${number} Copied to clipboard.`);
-            }}
           />
         </div>
         <br />
