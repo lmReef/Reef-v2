@@ -2,7 +2,6 @@ import About from '../components/sections/about';
 import BgPattern from '../components/three/bg-pattern';
 import Contact from '../components/sections/contact';
 import Footer from '../components/footer';
-import Image from 'next/image';
 import Layout from '../components/layout';
 import type { NextPage } from 'next';
 import Work from '../components/sections/work';
