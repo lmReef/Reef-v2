@@ -23,13 +23,12 @@ const StyledSection = styled.div`
 
 const Contact = () => {
   const number = '+64204411241';
-  const email = 'ReefMatson@gmail.com';
+  const email = 'contact@ReefMatson.com';
 
   return (
     <StyledSection className="section contact">
       <BgSpiralBottom />
       <h2>Get in touch with me</h2>
-      <h3>You know you want to</h3>
       <div className="section-content">
         <p>Here&apos;s a few ways to get hold of me</p>
         <br />

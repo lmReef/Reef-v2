@@ -135,8 +135,12 @@ const Grid = ({ gridData }: { gridData: GridInput[] }) => {
             <div className="image-container">
               <Image
                 unoptimized
-                objectFit="cover"
-                layout="fill"
+                fill
+                style={{
+                  objectFit: tile.image.includes('splash')
+                    ? 'contain'
+                    : 'cover',
+                }}
                 src={tile.image}
                 alt="Image"
               />
