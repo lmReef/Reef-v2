@@ -13,6 +13,8 @@ const StyledLayout = styled(Layout)`
   .splash {
     max-width: 60%;
     margin: auto;
+    position: relative;
+    z-index: 20;
 
     @media only screen and (max-width: $mobile) {
       max-width: 75%;

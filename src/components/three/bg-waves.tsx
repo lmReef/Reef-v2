@@ -1,7 +1,6 @@
-import { Canvas, ThreeElements, useFrame, useThree } from '@react-three/fiber';
+import { Canvas, ThreeElements, useFrame } from '@react-three/fiber';
 import { useMemo, useRef } from 'react';
 
-import { Color } from 'three';
 import styled from 'styled-components';
 
 const StyledBG = styled.div`
