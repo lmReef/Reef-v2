@@ -134,7 +134,6 @@ const Grid = ({ gridData }: { gridData: GridInput[] }) => {
           <StyledTile key={index}>
             <div className="image-container">
               <Image
-                unoptimized
                 fill
                 style={{
                   objectFit: tile.image.includes('splash')
